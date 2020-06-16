@@ -33,12 +33,12 @@ public class ArrayConnectString {
       if (lastSite == null || i[0] >= lastSite[0] - 1 && i[0] <= lastSite[0] + 1 && i[1] >= lastSite[1] - 1 && i[1] <= lastSite[1] + 1) {
         System.out.println(str.charAt(index)+"-->"+ Arrays.toString(i));
         if(index==str.length()-1){
+          System.out.println("-----");
           num++;
           continue;
         }
         findnext(map, index + 1, str, i);
       }
     }
-    return;
   }
 }
