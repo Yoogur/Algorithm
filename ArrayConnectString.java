@@ -28,7 +28,7 @@ public class ArrayConnectString {
   public static void findnext(Map<Character, Set<Integer[]>> map, int index, String str, Integer[] lastSite) {
     for (Integer[] i : map.get(str.charAt(index))) {
       if (i == lastSite) {
-        return;
+        continue;
       }
       if (lastSite == null || i[0] >= lastSite[0] - 1 && i[0] <= lastSite[0] + 1 && i[1] >= lastSite[1] - 1 && i[1] <= lastSite[1] + 1) {
         System.out.println(str.charAt(index)+"-->"+ Arrays.toString(i));
