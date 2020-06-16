@@ -34,7 +34,7 @@ public class ArrayConnectString {
         System.out.println(str.charAt(index)+"-->"+ Arrays.toString(i));
         if(index==str.length()-1){
           num++;
-          return;
+          continue;
         }
         findnext(map, index + 1, str, i);
       }
